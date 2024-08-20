@@ -183,9 +183,14 @@ a:hover {
         font-size: 0.8em;
         text-align: center;
     }
+    nav{
+        align-items: center;
+    }
 }
 @media (min-width: 375px) {
-    
+    nav{
+        align-items: center;
+    }
 }
 @media (min-width: 768px) {
     header {
@@ -205,6 +210,7 @@ a:hover {
     }
     nav{
         margin-top: 4%;
+        align-items: center;
     }
 }
 
