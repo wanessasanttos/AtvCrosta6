@@ -17,6 +17,36 @@ header {
     width: 100%;
 }
 
+nav{
+    display: none;
+}
+nav > ul{
+    list-style-type: none;
+    align-items: center;
+    align-content: center;
+}
+nav > ul> li{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+nav > ul > li > a{
+    display: block;
+    background-color:violet;
+    padding:10px;
+    text-decoration: none;
+    color:#291b25;
+    text-align: center;
+    border-top:2px solid #61a6ab;
+}
+nav > ul > li > a > button{
+    border-radius: 28px;
+    color: #ffce6d;
+    font-size: 1em;
+    background: #291b25;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
 p {
     font-family: 'Glacial Indiferrence', Arial, sans-serif;
     color: #291b25;
@@ -33,47 +63,11 @@ footer {
     text-align: center;
     margin-top: 2em;
 }
-
-ul {
-    list-style: none;
+span#burguer{
+    display: block;
+    font-size: 32px;
+    text-align: end;
 }
-
-li {
-    display: flex;
-    align-items: center;
-}
-
-a {
-    color: #291b25;
-    text-decoration: none;
-    font-size: 1em;
-    letter-spacing: 1.5px;
-}
-a:hover {
-    border-radius: 10px;
-    color: #342418;
-    background-color: rgba(0, 0, 0, 0.356);
-}
-/*botão de menu*/
-#btn-mobile{
-    display:flex;
-}
-.btn-login {
-    border-radius: 28px;
-    color: orange;
-    font-size: 1em;
-    background: #000000;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-.btn-login:hover{
-    background-color: #00000067;
-}
-#menu{
-        list-style:none ;
-        gap: 0.5em;
-    }
-/*Estilização Mobile*/
 @media (min-width: 320px) {
     a {
         padding: 10px 10px;
@@ -179,64 +173,18 @@ a:hover {
         font-size: 0.8em;
         text-align: center;
     }
-    #nav{
-        align-items: center;
-        margin: 1rem;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    #menu{
-        list-style:none ;
-        gap: 0.5em;
-        display: none;
-    }
-    #nav.active #menu{
-        display: flex;
-    }
 }
+
+
 @media (min-width: 375px) {
-    #nav.active #menu{
-        display: flex;
-    }
 }
 @media (min-width: 768px) {
-    /*navbar*/
-    #btn-mobile{
-        display:none;
-    }
-    #header{
-        display: flex;
-        flex-direction: row ;
-        padding: 1rem;
-        height: 70%;
-        box-sizing: border-box;
-        justify-content: center;
-    }
-    #menu {
-        display:flex;
-        list-style:none ;
-        gap: 0.5em;
-    }
-    .menu {
-        display: flex;
-        background-color: #61a6ab;
-        flex-direction: row;
-        font-size: 0.4em;
-        z-index: 3;
-    }
 }
-
 @media (min-width: 1024px) {
-
-}
-    
-
+}   
 @media (min-width: 1440px) {
-
 }
-
 @media (min-width: 1920px) {
 }
 @media (min-width: 2560px) {
-
 }
