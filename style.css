@@ -31,8 +31,8 @@ nav > ul> li{
     align-self: center;
 }
 nav > ul > li > a{
+    background-color: #549397;
     display: block;
-    background-color:violet;
     padding:10px;
     text-decoration: none;
     color:#291b25;
@@ -40,12 +40,16 @@ nav > ul > li > a{
     border-top:2px solid #61a6ab;
 }
 nav > ul > li > a > button{
+    padding: 1em;
     border-radius: 28px;
     color: #ffce6d;
     font-size: 1em;
     background: #291b25;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 20px;
     text-decoration: none;
+}
+nav > ul > li > a > button> span{
+    margin-left: 2em;
 }
 p {
     font-family: 'Glacial Indiferrence', Arial, sans-serif;
@@ -64,8 +68,14 @@ footer {
     margin-top: 2em;
 }
 span#burguer{
+    background-color: #549397;
     display: block;
     font-size: 32px;
+    text-align: end;
+}
+span#seta{
+    color: #61a6ab;
+    font-size: 16px;
     text-align: end;
 }
 @media (min-width: 320px) {
