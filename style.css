@@ -15,6 +15,7 @@ body {
 
 header {
     width: 100%;
+    margin-bottom: 1em;
 }
 
 nav{
@@ -32,11 +33,12 @@ nav > ul> li{
 }
 nav > ul > li > a{
     background-color: #549397;
-    display: block;
+    display: flex;
     padding:10px;
     text-decoration: none;
     color:#291b25;
     text-align: center;
+    justify-content: center;
     border-top:2px solid #61a6ab;
 }
 nav > ul > li > a > button{
@@ -78,6 +80,7 @@ span#seta{
     font-size: 16px;
     text-align: end;
 }
+/*não mexi auqui*/
 @media (min-width: 320px) {
     a {
         padding: 10px 10px;
@@ -188,11 +191,42 @@ span#seta{
 
 @media (min-width: 375px) {
 }
+
 @media (min-width: 768px) {
+    header {
+        width: 100%;
+        margin:1em;
+    }
+    #login-left{
+        margin-left: 5em;
+    }
+    span#burguer{
+        display: none;
+    }
+    nav#itens{
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+    }
+    nav > ul > li > a{
+        background-color: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+    }
 }
 @media (min-width: 1024px) {
+    #login-left{
+        margin-left: 13em;
+    }
 }   
 @media (min-width: 1440px) {
+    #login-left{
+        margin-left: 2em;
+    }
 }
 @media (min-width: 1920px) {
 }

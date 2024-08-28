@@ -14,7 +14,7 @@
         rel="stylesheet">
          <!--ABA DE ESCOPO NECESSÁRIO -->
 </head>
-<body>
+<body   onresize="mudaTamanho()">
     <header>
         <span id="burguer"class="material-symbols-sharp" onclick="clickMenu()">
             menu
@@ -24,13 +24,13 @@
                 <li><a href="/">Inicial</a></li>
                 <li><a href="/">Recomendações</a></li>
                 <li><a href="/">Comunidades</a></li>
-                <li>
+                <li id="login-left">
                     <a>
-                    <button class="btn-login">Login
-                        <span id="seta"class="material-symbols-sharp" onclick="clickMenu()">
+                        <button class="btn-login">Login
+                            <span id="seta"class="material-symbols-sharp" onclick="clickMenu()">
                                 arrow_forward
-                        </span>
-                    </button>
+                            </span>
+                        </button>
                     </a>
                 </li>
             </ul>
