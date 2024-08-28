@@ -4,7 +4,6 @@
     padding: 0;
     
 }
-
 body {
     font-family: 'Glacial Indiferrence', Arial, sans-serif;
     background: #61a6ab;
@@ -14,8 +13,7 @@ body {
 }    
 header {
     width: 100%;
-    display: flex;
-}    
+}
 p {
     font-family: "Glacial Indifference", Arial, sans-serif;
     color: #291b25;
@@ -240,7 +238,7 @@ html,body {
          }
         .img_comp {
             min-width: 1000px;
-            height: 490px;
+            height: 500px;
             margin-bottom: 0em;
         }
         .rodape {
@@ -280,8 +278,8 @@ html,body {
             padding-bottom: 0em;
         }
         .img_comp {
-            min-width: 1100px;
-            height: 590px;
+            min-width: 1400px;
+            height: 700px;
             margin-bottom: 0em;
             padding-left: 4em;
         }
@@ -289,6 +287,13 @@ html,body {
     
 
 @media (min-width: 1440px) {
+    figure.img{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: -300px;
+        margin-inline-end: -320px;
+        unicode-bidi: isolate;
+    }
         .cont_sobrenos {
             width: 82em;
             margin-left: 4em;
@@ -332,8 +337,8 @@ html,body {
             height: 100%;
         }
         .img_comp {
-            min-width: 1200px;
-            height: 800px;
+            min-width: 1900px;
+            height: 700px;
             padding-bottom: 100px;
             padding-left: 0em;
         }
