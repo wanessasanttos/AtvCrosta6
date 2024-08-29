@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Digitalizada</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/5920863a7a13b2352910cda26fd36424?family=FONTE" rel="stylesheet"
+        type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+         <!--ABA DE ESCOPO NECESSÁRIO -->
+</head>
+<body   onresize="mudaTamanho()">
+    <header>
+        <span id="burguer"class="material-symbols-sharp" onclick="clickMenu()">
+            menu
+        </span>
+        <nav id="itens">
+            <ul>
+                <li><a href="/">Inicial</a></li>
+                <li><a href="/">Recomendações</a></li>
+                <li><a href="/">Comunidades</a></li>
+                <li id="login-left">
+                    <a>
+                        <button class="btn-login">Login
+                            <span id="seta"class="material-symbols-sharp" onclick="clickMenu()">
+                                arrow_forward
+                            </span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cont_sobrenos">
+
+            <div class="container_pad">
+
+                <section class ="boxText">
+                    <div class="bloco_sobre">
+                        <p class="sobre">Sobre nós:</p>
+                    </div>
+                    <div class="central_tit">
+                        <p class="titulo">Educação Digitalizada</p>
+                    </div>
+                    <div class="alinha_text">
+                        <p class="info_sobre">Trata-se de um portal educacional, concebido para proporcionar o compartilhamento de experiências envolvendo aprendizagem e medologias visando facilitar esse processo.
+                         Esse site disponibiliza recursos pedagógicos, incluindo recomendações literárias, chat de comunidade , dentre outras funcionalidades.</p>
+                    </div>
+                </section>
+                <figure class="img">
+                    <img src="iconeSemFundo.png" class="img_comp" alt="imagem de computador ligado á informações">
+                </figure>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <p class="rodape_text">Produzido pela LAWD - Liga Acadêmica de Desenvolvimento Web </p>
+        </div>
+    </footer>
+    <script src="/navbar.js"></script>
+</html>
