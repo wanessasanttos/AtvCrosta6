@@ -1,18 +1,16 @@
+ @import url(https://db.onlinewebfonts.com/c/5920863a7a13b2352910cda26fd36424?family=FONTE);
 * {
     margin: 0;
     padding: 0;
-    @import url(https://db.onlinewebfonts.com/c/5920863a7a13b2352910cda26fd36424?family=FONTE);
+    
 }
-/* comportamento geral*/
 body {
     font-family: 'Glacial Indiferrence', Arial, sans-serif;
     background: #61a6ab;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
+}    
 header {
     width: 100%;
     margin-bottom: 1em;
@@ -51,15 +49,16 @@ nav > ul > li > a > button{
     text-decoration: none;
 }
 nav > ul > li > a > button> span{
+    margin-top: 3px;
     margin-left: 2em;
+    align-items: center;
 }
 p {
-    font-family: 'Glacial Indiferrence', Arial, sans-serif;
+    font-family: "Glacial Indifference", Arial, sans-serif;
     color: #291b25;
     display: flex;
-}
+}    
 main {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -67,65 +66,38 @@ footer {
     width: 100%;
     display: flex;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 5em;
+}    
+html,body {
+        overflow-x: hidden;
 }
-span#burguer{
-    background-color: #549397;
-    display: block;
-    font-size: 32px;
-    text-align: end;
-}
-span#seta{
-    color: #61a6ab;
-    font-size: 16px;
-    text-align: end;
-}
-/*não mexi auqui*/
+/*Estilização Mobile*/
 @media (min-width: 320px) {
-    a {
-        padding: 10px 10px;
-        color: black;
+    .boxText{
         display: flex;
-        text-align:justify;
-    }
-    .boxImg{
-        display: flex;
+        font-family: "Glacial Indifference", Arial, sans-serif;
         flex-direction: column;
-        padding: 10px;
-        width: 10em;
-    }
-    .login {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        background-color:#291b25;
-        border-radius: 16px;
-        gap: 1em;
-    }
-    .a>.log_estilo{
-        font-size: 0.5em;
-        gap: 1em;
-    }
-    .log_estilo{
-        font-family: 'Glacial Indifference', sans-serif;
-        color: #ffce6d;
+        margin: 0px 10px 10px 10px;
+        width: 16.4em;
     }
     .cont_sobrenos {
         background-color:#f6f6e9;
         display: flex;
         flex-direction: column;
+        margin-top: 1em;
+        margin-left: 1em;
         gap: 1em;
         flex: 1;
         width: 18em;
-        height: 30%;
+        height: 70%;
         border-radius: 15px;
     }
 
     .container_pad {
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        width: 10em;
+        padding: 10px 0px 0px 0px;
+        width: 17.9em;
 
     }
     .bloco_sobre{
@@ -136,7 +108,7 @@ span#seta{
         text-align: center;
         width: 10em;
         height: 2em;
-        margin: 1em 0em 1em 0em;
+        margin: 1em 0em 1.2em 0em;
     }
     .sobre{
         margin-top: 0.5em;
@@ -145,31 +117,39 @@ span#seta{
         font-size: 1em;
         display: flex;
         color: #ececec;
-        font-style: bold;
-    }
-    .central_tit{
-        width: 15em;
-        text-align:justify;
     }
     .titulo{
-        width:9.5em;
-        font-family: "FONTE";
-        font-size: 1.5em;
+        width:26em;
+        font-family:"Glacial Indifference",Arial,sans-serif;
+    }
+    .central_tit{
+        font-size: 1.6em;
+        width: 26em;
+        text-align:justify;
         color: #331D2C;
     }
+    .alinha_text{
+        font-size: 1.2em;
+        font-family:"Glacial Indifference",Arial,sans-serif;
+        color:#291b25;
+    }
     .info_sobre {
-        font-size: 1em;
-        width: 16em;
-        color: #342418;
-        margin-top: 11px;
-        font-family: 'Glacial Indiferrence', Arial, sans-serif;
+        color: #291b25;
+        margin-top: 40px;
     }
-    .img_comp {
-        margin-top: 1em;
-        width: 15em;
-        height: 10em;
+    .img{
+        justify-content: center;
+        align-items: center;
+        width:100%; 
+        height: 100%;
+        display: flex;
+        padding-bottom: 3em;
     }
-
+    .img_comp{
+        display: flex;
+        min-width: 650px;
+        height:350px;
+    }
     .rodape {
         display: flex;
         justify-content: center;
@@ -186,12 +166,90 @@ span#seta{
         font-size: 0.8em;
         text-align: center;
     }
+    span#burguer{
+        background-color: #549397;
+        display: block;
+        font-size: 32px;
+        text-align: end;
+    }
+    span#seta{
+        color: #61a6ab;
+        font-size: 16px;
+        text-align: end;
+    }
+    
+    a {
+        padding: 10px 10px;
+        color: black;
+        display: flex;
+        text-align:justify;
+    }
 }
 
 
 @media (min-width: 375px) {
-}
+    .boxText {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 10px 10px;
+        width: 17em;
+    }
 
+    .cont_sobrenos {
+        background-color: #f6f6e9;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        gap: 1em;
+        flex: 1;
+        width: 21em;
+        height: 25%;
+        border-radius: 15px;
+    }
+
+    .container_pad {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+        width: 17.9em;
+
+    }
+
+    .central_tit {
+        width: 32em;
+        text-align: justify;
+    }
+
+    .info_sobre {
+        font-size: 1em;
+        width: 16em;
+        margin-top: 30px;
+    }
+
+    .img {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .img_comp {
+        display: flex;
+        min-width: 650px;
+        height: 400px;
+    }
+}
+@media (min-width: 425px) {
+    .cont_sobrenos {
+        margin-left: 3em;
+    }
+
+    .img_comp {
+        min-width: 750px;
+        height: 450px;
+        margin-bottom: 1em;
+    }
+
+}
 @media (min-width: 768px) {
     header {
         width: 100%;
@@ -214,21 +272,352 @@ span#seta{
         flex-direction: row;
     }
     nav > ul{
+        margin-right: 2em;
         display: flex;
         flex-direction: row;
+    }
+    .cont_sobrenos {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+        margin-left: 2em;
+        gap: 1em;
+        width: 44em;
+        height: 20%;
+    }
+
+    .container_pad {
+        display: flex;
+        flex-direction: row;
+
+        padding: 10px 0px 0px 0px;
+        width: 25em;
+        height: 20%;
+
+    }
+
+    .boxText {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 10px 0px 30px;
+        width: 16.7em;
+    }
+
+    .central_tit {
+        width: 35em;
+        text-align: justify;
+    }
+
+    .titulo {
+        color: #331D2C;
+        text-align: justify;
+    }
+
+    .info_sobre {
+        font-size: 0.8em;
+        width: 16em;
+        color: #291b25;
+        margin-top: 30px;
+    }
+
+    .img {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0em;
+    }
+
+    .img_comp {
+        min-width: 1000px;
+        height: 500px;
+        margin-bottom: 0em;
+    }
+
+    .rodape {
+        font-size: 1.5em;
     }
 }
 @media (min-width: 1024px) {
     #login-left{
         margin-left: 13em;
     }
+    .cont_sobrenos {
+        width: 61em;
+        height: 30%;
+        margin-left: 1.5em;
+    }
+
+    .container_pad {
+        padding: 10px 0px 0px 0px;
+        width: 25em;
+        height: 30em;
+
+    }
+
+    .boxText {
+        margin: 50px 10px 0px 40px;
+        width: 25em;
+    }
+
+    .central_tit {
+        width: 32em;
+    }
+
+    .info_sobre {
+        font-size: 0.8em;
+        width: 19.5em;
+    }
+
+    .img {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0em;
+    }
+
+    .img_comp {
+        min-width: 1400px;
+        height: 700px;
+        margin-bottom: 0em;
+        padding-left: 4em;
+    }
 }   
 @media (min-width: 1440px) {
     #login-left{
-        margin-left: 2em;
+        margin-left: 24em;
+        margin-right: 2em;
+    }
+    figure.img {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: -300px;
+        margin-inline-end: -320px;
+        unicode-bidi: isolate;
+    }
+
+    .cont_sobrenos {
+        width: 82em;
+        margin-left: 4em;
+    }
+
+    .container_pad {
+        padding: 100px 0px 0px 0px;
+        width: 44em;
+        height: 30em;
+    }
+
+    .boxText {
+        margin: 0px 0px 0px 70px;
+        width: 50em;
+    }
+
+    .bloco_sobre {
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 14em;
+        height: 2.3em;
+        margin: 1em 0em 1.2em 0em;
+    }
+
+    .sobre {
+        margin-top: 0.4em;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        display: flex;
+        color: #ececec;
+    }
+
+    .central_tit {
+        width: 35em;
+        font-size: 2.7em;
+    }
+
+    .info_sobre {
+        font-size: 1.1em;
+        width: 20em;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_comp {
+        min-width: 1900px;
+        height: 900px;
+        padding-bottom: 100px;
+        padding-left: 0em;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 10em;
+    }
+
+    .rodape_text {
+        color: #291b25;
+        justify-content: center;
+        display: flex;
+        font-size: 1.3em;
+        text-align: center;
     }
 }
 @media (min-width: 1920px) {
+    #login-left{
+        margin-left: 26em;
+        margin-right: 3em;
+    }
+    figure.img {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: -300px;
+        margin-inline-end: -320px;
+        unicode-bidi: isolate;
+    }
+     .cont_sobrenos {
+         width: 110em;
+         display: flex;
+         margin-left: 5em;
+         height: 60em;
+     }
+
+     .container_pad {
+         padding: 190px 0px 0px 0px;
+         width: 110em;
+         height: 50%;
+     }
+
+     .boxText {
+         margin: 0px 0px 0px 70px;
+         width: 50em;
+     }
+
+     .bloco_sobre {
+         border-radius: 16px;
+         font-size: 1em;
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         width: 20em;
+         height: 3em;
+         margin: 1em 0em 1.5em 0em;
+     }
+
+     .sobre {
+         text-align: center;
+         padding-bottom: 0.4em;
+         font-size: 1.6em;
+     }
+
+     .central_tit {
+         width: 50em;
+         font-size: 4.9em;
+     }
+
+     .info_sobre {
+         font-size: 1.7em;
+         width: 20em;
+     }
+
+     .img {
+         width: 100%;
+         height: 100%;
+     }
+
+     .img_comp {
+         min-width: 2400px;
+         height: 1200px;
+         padding-right: 300px;
+         padding-bottom: 0px;
+     }
+
+     .rodape {
+         width: 100%;
+         height: 10em;
+     }
+
+     .rodape_text {
+         color: #291b25;
+         justify-content: center;
+         display: flex;
+         font-size: 1.3em;
+         text-align: center;
+     }
 }
 @media (min-width: 2560px) {
+    figure.img {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: -300px;
+        margin-inline-end: -320px;
+        unicode-bidi: isolate;
+    }
+
+    .cont_sobrenos {
+        width: 150em;
+        margin-left: 5em;
+        height: 70em;
+    }
+
+    .container_pad {
+        padding: 190px 0px 0px 0px;
+        width: 150em;
+        height: 50%;
+    }
+
+    .boxText {
+        margin: 0px 0px 0px 130px;
+        width: 90em;
+    }
+
+    .bloco_sobre {
+        border-radius: 30px;
+        font-size: 1.5em;
+        width: 20em;
+        height: 3em;
+        margin: 1em 0em 1.5em 0em;
+    }
+
+    .sobre {
+        text-align: center;
+        padding-bottom: 0.4em;
+    }
+
+    .central_tit {
+        width: 50em;
+        font-size: 7em;
+    }
+
+    .info_sobre {
+        font-size: 2.2em;
+        width: 25em;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_comp {
+        min-width: 2900px;
+        height: 1400px;
+        padding-right: 1200px;
+        padding-bottom: 0px;
+    }
+
+    .rodape {
+        width: 100%;
+        height: 10em;
+    }
+    .rodape_text {
+        font-size: 2.5em;
+    }
+    footer{
+        margin-top: 15em;
+    }
 }
